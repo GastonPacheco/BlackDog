@@ -1,0 +1,250 @@
+/*---------RESET-------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* navbar bootstrap */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.814) !important;
+
+}
+.navbar-contenedor-general{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    align-self: normal;
+}
+.nav-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+.nav-login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav-login button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100px;
+    padding: 2px 0;
+}
+
+.nav-login a {
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.imagen-logo-imagen{
+    background-color: white;
+    border-radius: 50%;
+}
+.navbar-inferior-contenedor-papa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+}
+.navbar-inferior-contenedor{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.navbar-inferior-contenedor li a{
+    color: white !important;
+}
+
+/* index pagina */
+.hero-seccion{
+    background-image: url(../img/matesss.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+.hero-titulo{
+    text-align: center;
+    font-size: 4rem;
+    background-color: rgba(128, 128, 128, 0.842);
+    padding: 5px 15px;
+}
+.hero-texto{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.hero-link{
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.galeria-contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.galeria-contenedor img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.bienvenidos-titulo{
+    font-size: 4rem;
+    background-color: rgba(128, 128, 128, 0.842);
+    padding: 5px 15px;
+    text-align: center;
+}
+.bienvenidos-texto{
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(46, 139, 86, 0.323);
+}
+.producto-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+.producto-card{
+    border: 1px black solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.producto-card img{
+    width: 100%;
+}
+.producto-card h3{
+    font-size: 2rem;
+    color: brown;
+    padding-top: 5px;
+}
+.producto-card a{
+    border: 1px black solid;
+    border-radius: 20px;
+    background-color: brown;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    padding: 0 7px;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes img {
+    width: 45px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+    background-color: grey;
+}
+
+footer .footer-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.titulo-seccion {
+    display: flex;
+    background-image: url(../img/matesss.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-seccion h2 {
+    background-color: rgba(0, 0, 0, 0.502);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 7px 15px;
+}
+
+.form-registro {
+    max-width: 400px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 991px) {
+    .contenedor-superior {
+        display: none !important;
+    }
+
+    .producto-contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .producto-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-inferior-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
