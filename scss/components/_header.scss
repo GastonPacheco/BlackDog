@@ -1,0 +1,69 @@
+body{
+    header{
+        .navbar-contenedor-general{
+            background-color: rgba(0, 0, 0, 0.814) !important;
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 0;
+            align-self: normal;
+            .contenedor-superior{
+                .nav-contenedor{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    @include padding (10px, 10px, 0, 10px);
+                    width: 100%;
+                    .nav-logo{
+                        .imagen-logo-imagen{
+                            background-color: $color-secundario;
+                            border-radius: 50%;
+                        }
+                    }
+                    .nav-login{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        button{
+                            grid-column-start: 1;
+                            grid-column-end: 3;
+                            width: 100%;
+                            margin: 0 auto;
+                            max-width: 100px;
+                            @include padding (2px, 2px, 2px, 2px);
+                        }
+                        a{
+                            color: $color-primario;
+                            text-align: center;
+                            grid-column-start: 1;
+                            grid-column-end: 3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar-inferior-contenedor-papa{
+    @extend %flex;
+    font-size: nth($font-size, 4);
+    .navbar-inferior-contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        li{
+            a{
+                color: $color-secundario !important;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+

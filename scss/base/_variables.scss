@@ -1,0 +1,25 @@
+//variables//
+$color-primario: brown;
+$color-secundario: white;
+$color-terciario: grey;
+$color-cuarto: black;
+//lista//
+$font-size:
+1.3rem,
+1.5rem,
+2rem,
+2.2rem,
+4rem;
+//extend//
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//mixin//
+@mixin padding ($arr, $der, $aba, $izq){
+    padding-top: $arr;
+    padding-right: $der;
+    padding-bottom: $aba;
+    padding-left: $izq;
+}

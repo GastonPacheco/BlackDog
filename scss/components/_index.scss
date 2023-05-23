@@ -1,0 +1,93 @@
+main{
+    .hero-seccion{
+        background-image: url(../img/matesss.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @extend %flex;
+        flex-direction: column;
+        color: $color-secundario;
+        @include padding (50px, 50px, 50px, 50px);
+        .hero-titulo{
+            text-align: center;
+            font-size: nth($font-size, 5);
+            background-color: rgba(128, 128, 128, 0.842);
+            @include padding (5px, 15px, 5px, 15px);
+        }
+        .hero-texto{
+            font-size: nth($font-size, 3);
+            font-weight: bold;
+            @include padding (50px, 0, 50px, 0);
+            text-align: center;
+        }
+        .hero-link{
+            display: block;
+            font-size: nth($font-size, 2);
+            color: $color-secundario;
+            background-color: $color-cuarto;
+            border: 1px solid $color-cuarto;
+            border-radius: 5px;
+            margin-top: 25px;
+        }
+    }
+    .galeria-fotos{
+        .galeria-contenedor{
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .bienvenidos-seccion{
+        .bienvenidos-titulo{
+            font-size: nth($font-size, 5);
+            background-color: rgba(128, 128, 128, 0.842);
+            @include padding (5px, 15px, 5px, 15px);
+            text-align: center;
+        }
+        .bienvenidos-texto{
+            text-align: center;
+            font-size: nth($font-size, 3);
+            background-color: rgba(44, 47, 46, 0.23);
+        }
+    }
+    .productos-destacados{
+        .producto-contenedor{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            width: 100%;
+            .producto-card{
+                border: 1px $color-cuarto solid;
+                border-radius: 5px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.05);
+                }
+                @extend %flex;
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+                h3{
+                    font-size: nth($font-size, 3);
+                    color: $color-primario;
+                    @include padding (5px, 0, 0, 0);
+                }
+                a{
+                    border: 1px $color-cuarto solid;
+                    border-radius: 20px;
+                    background-color: $color-primario;
+                    color: $color-secundario;
+                    font-size: nth($font-size, 1);
+                    margin-bottom: 10px;
+                    @include padding (0, 7px, 0, 7px);
+                }
+            }
+        }
+    }
+}

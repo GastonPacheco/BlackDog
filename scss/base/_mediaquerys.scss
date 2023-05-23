@@ -1,0 +1,34 @@
+@media (max-width: 991px) {
+    header{
+        .navbar-contenedor-general{
+            .contenedor-superior {
+                display: none !important;
+            }
+        }
+    }
+    .productos-destacados{
+        .producto-contenedor{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    .productos-destacados{
+        .producto-contenedor {
+            grid-template-columns: 1fr;
+        }
+    }
+    .navbar-contenedor-general{
+        .contenedor-inferior{
+            .navbar-toggler{
+                .navbar-inferior-contenedor-papa{
+                    .navbar-inferior-contenedor {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

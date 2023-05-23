@@ -1,0 +1,29 @@
+main{
+    .registro{
+        .titulo-seccion{
+            @extend %flex;
+            background-image: url(../img/matesss.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include padding (5rem, 2rem, 5rem, 2rem);
+            h2{
+                background-color: rgba(0, 0, 0, 0.502);
+                color: $color-secundario;
+                font-size: nth($font-size, 3);
+                text-align: center;
+                @include padding (7px, 15px, 7px, 15px);
+            }
+        }
+        .form-registro{
+            max-width: 400px;
+            background-color: $color-terciario;
+            @extend %flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px auto;
+            @include padding (20px, 20px, 20px, 20px);
+            text-align: center;
+        }
+    }
+}
