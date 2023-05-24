@@ -80,7 +80,7 @@ main .registro .titulo-seccion {
   padding-right: 2rem;
   padding-bottom: 5rem;
   padding-left: 2rem; }
-  main .registro .titulo-seccion h2 {
+  main .registro .titulo-seccion h1 {
     background-color: rgba(0, 0, 0, 0.502);
     color: white;
     font-size: 2rem;
@@ -203,7 +203,7 @@ main .productos-destacados .titulo-seccion {
   padding-right: 2rem;
   padding-bottom: 5rem;
   padding-left: 2rem; }
-  main .productos-destacados .titulo-seccion h2 {
+  main .productos-destacados .titulo-seccion h1 {
     background-color: rgba(0, 0, 0, 0.502);
     color: white;
     font-size: 2rem;
@@ -224,7 +224,7 @@ main .productos-destacados .producto-contenedor {
     flex-direction: column; }
     main .productos-destacados .producto-contenedor .producto-card img {
       width: 100%; }
-    main .productos-destacados .producto-contenedor .producto-card h3 {
+    main .productos-destacados .producto-contenedor .producto-card h2 {
       font-size: 2rem;
       color: brown;
       padding-top: 5px;
@@ -252,7 +252,7 @@ main .productos-destacados .titulo-seccion {
   padding-right: 2rem;
   padding-bottom: 5rem;
   padding-left: 2rem; }
-  main .productos-destacados .titulo-seccion h2 {
+  main .productos-destacados .titulo-seccion h1 {
     background-color: rgba(0, 0, 0, 0.502);
     color: white;
     font-size: 2rem;
@@ -273,7 +273,7 @@ main .productos-destacados .producto-contenedor {
     flex-direction: column; }
     main .productos-destacados .producto-contenedor .producto-card img {
       width: 100%; }
-    main .productos-destacados .producto-contenedor .producto-card h3 {
+    main .productos-destacados .producto-contenedor .producto-card h2 {
       font-size: 2rem;
       color: brown;
       padding-top: 5px;
@@ -301,7 +301,7 @@ main .productos-destacados .titulo-seccion {
   padding-right: 2rem;
   padding-bottom: 5rem;
   padding-left: 2rem; }
-  main .productos-destacados .titulo-seccion h2 {
+  main .productos-destacados .titulo-seccion h1 {
     background-color: rgba(0, 0, 0, 0.502);
     color: white;
     font-size: 2rem;
@@ -322,7 +322,7 @@ main .productos-destacados .producto-contenedor {
     flex-direction: column; }
     main .productos-destacados .producto-contenedor .producto-card img {
       width: 100%; }
-    main .productos-destacados .producto-contenedor .producto-card h3 {
+    main .productos-destacados .producto-contenedor .producto-card h2 {
       font-size: 2rem;
       color: brown;
       padding-top: 5px;
