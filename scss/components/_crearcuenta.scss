@@ -18,12 +18,71 @@ main{
         .form-registro{
             max-width: 400px;
             background-color: $color-terciario;
-            @extend %flex;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
             flex-direction: column;
             gap: 10px;
             margin: 10px auto;
             @include padding (20px, 20px, 20px, 20px);
             text-align: center;
+            .form-contenedor-nombre{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .form-contenedor-apellido{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .form-contenedor-email{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .form-contenedor-password{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .form-contenedor-genero{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                h2{
+                    font-size: 1.5rem;
+                }
+                .form-contenedor-genero-opciones{
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .form-contenedor-comentario{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                h2{
+                    font-size: 1.8rem;
+                }
+            }
+            .form-contenedor-botones{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+            }
         }
     }
 }

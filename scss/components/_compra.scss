@@ -1,5 +1,5 @@
 main{
-    .registro{
+    .compras{
         .titulo-seccion{
             @extend %flex;
             background-image: url(../img/matesss.jpg);
@@ -14,7 +14,18 @@ main{
                 text-align: center;
                 @include padding (7px, 15px, 7px, 15px);
             }
+        }    
+        .cartel{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 7rem;
+            margin-bottom: 7rem;
+            h2{
+                color: $color-primario;
+            }
         }
-
     }
+
 }

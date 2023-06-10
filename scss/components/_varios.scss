@@ -15,34 +15,5 @@ main{
                 @include padding (7px, 15px, 7px, 15px);
             }
         }
-        .producto-contenedor{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-            width: 100%;
-            .producto-card{
-                border: 1px $color-cuarto solid;
-                border-radius: 5px;
-                @extend %flex;
-                flex-direction: column;
-                img{
-                    width: 100%;
-                }
-                h2{
-                    font-size: nth($font-size, 3);
-                    color: $color-primario;
-                    @include padding (5px, 0, 0, 0);
-                }
-                a{
-                    border: 1px $color-cuarto solid;
-                    border-radius: 20px;
-                    background-color: $color-primario;
-                    color: $color-secundario;
-                    font-size: nth($font-size, 1);
-                    margin-bottom: 10px;
-                    @include padding (0, 7px, 0, 7px);
-                }
-            }
-        }
     }
 }

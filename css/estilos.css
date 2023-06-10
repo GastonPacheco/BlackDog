@@ -1,4 +1,4 @@
-.navbar-inferior-contenedor-papa, main .registro .titulo-seccion, main .registro .form-registro, main .hero-seccion, main .productos-destacados .producto-contenedor .producto-card, main .productos-destacados .titulo-seccion, .footer {
+.navbar-inferior-contenedor-papa, main .compras .titulo-seccion, main .registro .titulo-seccion, main .hero-seccion, main .productos-destacados .producto-contenedor .producto-card, main .productos-destacados .titulo-seccion, .footer {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -34,7 +34,9 @@ body header .navbar-contenedor-general {
     width: 100%; }
     body header .navbar-contenedor-general .contenedor-superior .nav-contenedor .nav-logo .imagen-logo-imagen {
       background-color: white;
-      border-radius: 50%; }
+      border-radius: 50%;
+      padding-left: 25px;
+      margin-left: 163px; }
     body header .navbar-contenedor-general .contenedor-superior .nav-contenedor .nav-login {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -71,7 +73,7 @@ body header .navbar-contenedor-general {
       .navbar-inferior-contenedor-papa .navbar-inferior-contenedor li a:hover {
         transform: scale(1.1); }
 
-main .registro .titulo-seccion {
+main .compras .titulo-seccion {
   background-image: url(../img/matesss.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -80,7 +82,7 @@ main .registro .titulo-seccion {
   padding-right: 2rem;
   padding-bottom: 5rem;
   padding-left: 2rem; }
-  main .registro .titulo-seccion h1 {
+  main .compras .titulo-seccion h1 {
     background-color: rgba(0, 0, 0, 0.502);
     color: white;
     font-size: 2rem;
@@ -89,6 +91,16 @@ main .registro .titulo-seccion {
     padding-right: 15px;
     padding-bottom: 7px;
     padding-left: 15px; }
+
+main .compras .cartel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 7rem; }
+  main .compras .cartel h2 {
+    color: brown; }
 
 main .registro .titulo-seccion {
   background-image: url(../img/matesss.jpg);
@@ -112,6 +124,9 @@ main .registro .titulo-seccion {
 main .registro .form-registro {
   max-width: 400px;
   background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
   flex-direction: column;
   gap: 10px;
   margin: 10px auto;
@@ -120,6 +135,53 @@ main .registro .form-registro {
   padding-bottom: 20px;
   padding-left: 20px;
   text-align: center; }
+  main .registro .form-registro .form-contenedor-nombre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  main .registro .form-registro .form-contenedor-apellido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  main .registro .form-registro .form-contenedor-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  main .registro .form-registro .form-contenedor-password {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  main .registro .form-registro .form-contenedor-genero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; }
+    main .registro .form-registro .form-contenedor-genero h2 {
+      font-size: 1.5rem; }
+    main .registro .form-registro .form-contenedor-genero .form-contenedor-genero-opciones {
+      margin-left: 5px;
+      margin-right: 5px;
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+  main .registro .form-registro .form-contenedor-comentario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; }
+    main .registro .form-registro .form-contenedor-comentario h2 {
+      font-size: 1.8rem; }
+  main .registro .form-registro .form-contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; }
 
 main .hero-seccion {
   background-image: url(../img/matesss.jpg);
@@ -180,22 +242,31 @@ main .bienvenidos-seccion .bienvenidos-texto {
   font-size: 2rem;
   background-color: rgba(44, 47, 46, 0.23); }
 
+main .productos-destacados h2 {
+  align-items: center;
+  font-size: 3rem;
+  text-align: center; }
+
 main .productos-destacados .producto-contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  width: 100%; }
+  justify-content: space-around;
+  justify-items: center;
+  gap: 25px;
+  width: 100%;
+  margin-top: 50px; }
   main .productos-destacados .producto-contenedor .producto-card {
     border: 1px black solid;
     border-radius: 5px;
     transition: 1s;
+    width: 75%;
     flex-direction: column; }
     main .productos-destacados .producto-contenedor .producto-card:hover {
       transform: scale(1.05); }
     main .productos-destacados .producto-contenedor .producto-card img {
       width: 100%; }
     main .productos-destacados .producto-contenedor .producto-card h3 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: brown;
       padding-top: 5px;
       padding-right: 0;
@@ -212,6 +283,8 @@ main .productos-destacados .producto-contenedor {
       padding-right: 7px;
       padding-bottom: 0;
       padding-left: 7px; }
+    main .productos-destacados .producto-contenedor .producto-card h2 {
+      font-size: 2rem; }
 
 main .productos-destacados .titulo-seccion {
   background-image: url(../img/matesss.jpg);
@@ -232,36 +305,6 @@ main .productos-destacados .titulo-seccion {
     padding-bottom: 7px;
     padding-left: 15px; }
 
-main .productos-destacados .producto-contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  width: 100%; }
-  main .productos-destacados .producto-contenedor .producto-card {
-    border: 1px black solid;
-    border-radius: 5px;
-    flex-direction: column; }
-    main .productos-destacados .producto-contenedor .producto-card img {
-      width: 100%; }
-    main .productos-destacados .producto-contenedor .producto-card h2 {
-      font-size: 2rem;
-      color: brown;
-      padding-top: 5px;
-      padding-right: 0;
-      padding-bottom: 0;
-      padding-left: 0; }
-    main .productos-destacados .producto-contenedor .producto-card a {
-      border: 1px black solid;
-      border-radius: 20px;
-      background-color: brown;
-      color: white;
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      padding-top: 0;
-      padding-right: 7px;
-      padding-bottom: 0;
-      padding-left: 7px; }
-
 main .productos-destacados .titulo-seccion {
   background-image: url(../img/matesss.jpg);
   background-position: center;
@@ -281,36 +324,6 @@ main .productos-destacados .titulo-seccion {
     padding-bottom: 7px;
     padding-left: 15px; }
 
-main .productos-destacados .producto-contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  width: 100%; }
-  main .productos-destacados .producto-contenedor .producto-card {
-    border: 1px black solid;
-    border-radius: 5px;
-    flex-direction: column; }
-    main .productos-destacados .producto-contenedor .producto-card img {
-      width: 100%; }
-    main .productos-destacados .producto-contenedor .producto-card h2 {
-      font-size: 2rem;
-      color: brown;
-      padding-top: 5px;
-      padding-right: 0;
-      padding-bottom: 0;
-      padding-left: 0; }
-    main .productos-destacados .producto-contenedor .producto-card a {
-      border: 1px black solid;
-      border-radius: 20px;
-      background-color: brown;
-      color: white;
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      padding-top: 0;
-      padding-right: 7px;
-      padding-bottom: 0;
-      padding-left: 7px; }
-
 main .productos-destacados .titulo-seccion {
   background-image: url(../img/matesss.jpg);
   background-position: center;
@@ -329,36 +342,6 @@ main .productos-destacados .titulo-seccion {
     padding-right: 15px;
     padding-bottom: 7px;
     padding-left: 15px; }
-
-main .productos-destacados .producto-contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  width: 100%; }
-  main .productos-destacados .producto-contenedor .producto-card {
-    border: 1px black solid;
-    border-radius: 5px;
-    flex-direction: column; }
-    main .productos-destacados .producto-contenedor .producto-card img {
-      width: 100%; }
-    main .productos-destacados .producto-contenedor .producto-card h2 {
-      font-size: 2rem;
-      color: brown;
-      padding-top: 5px;
-      padding-right: 0;
-      padding-bottom: 0;
-      padding-left: 0; }
-    main .productos-destacados .producto-contenedor .producto-card a {
-      border: 1px black solid;
-      border-radius: 20px;
-      background-color: brown;
-      color: white;
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      padding-top: 0;
-      padding-right: 7px;
-      padding-bottom: 0;
-      padding-left: 7px; }
 
 .footer {
   flex-direction: column;
@@ -369,21 +352,82 @@ main .productos-destacados .producto-contenedor {
   margin-top: 30px;
   background-color: grey; }
   .footer .redes img {
-    width: 45px; }
+    width: 45px;
+    margin-right: 8px;
+    margin-left: 8px; }
   .footer .footer-links {
     display: flex;
     gap: 25px;
     margin-top: 30px; }
 
-@media (max-width: 991px) {
-  header .navbar-contenedor-general .contenedor-superior {
-    display: none !important; }
-  .productos-destacados .producto-contenedor {
-    grid-template-columns: 1fr 1fr; } }
-
 @media (max-width: 768px) {
-  .productos-destacados .producto-contenedor {
-    grid-template-columns: 1fr; }
-  .navbar-contenedor-general .contenedor-inferior .navbar-toggler .navbar-inferior-contenedor-papa .navbar-inferior-contenedor {
-    flex-direction: column;
-    text-align: center; } }
+  body header .navbar-contenedor-general .contenedor-superior .nav-contenedor .nav-buscar {
+    display: none !important; }
+  body header .navbar-contenedor-general .contenedor-superior .nav-contenedor .nav-login {
+    display: none !important; }
+  body header .navbar-contenedor-general .contenedor-superior .nav-contenedor .nav-logo .imagen-logo-imagen {
+    margin-left: 229px; }
+  body header .navbar-contenedor-general .contenedor-inferior {
+    justify-content: end; }
+  body main .bienvenidos-seccion .bienvenidos-titulo {
+    font-size: 2.5rem; }
+  body main .bienvenidos-seccion .bienvenidos-texto {
+    font-size: 1.5rem; }
+  body main .productos-destacados h2 {
+    font-size: 2rem; }
+  body main .productos-destacados .producto-contenedor {
+    grid-template-columns: 1fr 1fr; }
+    body main .productos-destacados .producto-contenedor .producto-card h3 {
+      font-size: 25px; } }
+
+@media (max-width: 375px) {
+  body header .navbar-contenedor-general .contenedor-superior .nav-contenedor .nav-buscar {
+    display: none !important; }
+  body header .navbar-contenedor-general .contenedor-superior .nav-contenedor .nav-login {
+    display: none !important; }
+  body header .navbar-contenedor-general .contenedor-superior .nav-contenedor .nav-logo .imagen-logo-imagen {
+    width: 59%;
+    margin-left: 68px;
+    padding-left: 25px; }
+  body header .navbar-contenedor-general .contenedor-inferior {
+    justify-content: end; }
+    body header .navbar-contenedor-general .contenedor-inferior .navbar-inferior-contenedor-papa {
+      font-size: 1rem;
+      margin-top: 20px; }
+  body main .hero-seccion .hero-titulo {
+    font-size: 2rem; }
+  body main .hero-seccion .hero-texto {
+    font-size: 1.5rem; }
+  body main .hero-seccion .hero-link {
+    font-size: 1.2rem; }
+  body main .bienvenidos-seccion .bienvenidos-titulo {
+    font-size: 1.8rem; }
+  body main .bienvenidos-seccion .bienvenidos-texto {
+    font-size: 1.2rem; }
+  body main .productos-destacados h2 {
+    font-size: 1.6rem; }
+  body main .productos-destacados .producto-contenedor {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px; }
+    body main .productos-destacados .producto-contenedor .producto-card h3 {
+      font-size: 0.7rem; }
+    body main .productos-destacados .producto-contenedor .producto-card h2 {
+      font-size: 1rem; }
+    body main .productos-destacados .producto-contenedor .producto-card a {
+      font-size: 1rem; }
+  body main .compras .cartel {
+    margin-bottom: 0;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px; }
+    body main .compras .cartel h2 {
+      text-align: center; }
+    body main .compras .cartel p {
+      text-align: center; }
+  body footer .footer-links {
+    padding-left: 0;
+    gap: 10px;
+    margin-bottom: 0;
+    margin-top: 18px !important; }
+    body footer .footer-links li {
+      font-size: 0.7rem; } }

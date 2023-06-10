@@ -1,32 +1,147 @@
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+body{
     header{
         .navbar-contenedor-general{
             .contenedor-superior {
-                display: none !important;
+                .nav-contenedor{
+                    .nav-buscar{
+                        display: none !important;
+                    }
+                    .nav-login{
+                        display: none !important;
+                    }
+                    .nav-logo{
+                        .imagen-logo-imagen{
+                            margin-left: 229px;
+                        }
+                    }
+                }
+            }
+            .contenedor-inferior{
+                justify-content: end;
             }
         }
     }
-    .productos-destacados{
-        .producto-contenedor{
-            grid-template-columns: 1fr 1fr;
+    main{
+        .bienvenidos-seccion{
+            .bienvenidos-titulo{
+                font-size: 2.5rem;
+            }
+            .bienvenidos-texto{
+                font-size: 1.5rem
+            }
+        }
+        .productos-destacados{
+            h2{
+                font-size: 2rem;
+            }
+            .producto-contenedor{
+                grid-template-columns: 1fr 1fr;
+                .producto-card{
+                    h3{
+                        font-size: 25px;
+                    }
+                }
+            }
         }
     }
+}
+
 
 }
-@media (max-width: 768px) {
-    .productos-destacados{
-        .producto-contenedor {
-            grid-template-columns: 1fr;
+@media (max-width: 375px){
+    body{
+        header{
+            .navbar-contenedor-general{
+                .contenedor-superior {
+                    .nav-contenedor{
+                        .nav-buscar{
+                            display: none !important;
+                        }
+                        .nav-login{
+                            display: none !important;
+                        }
+                        .nav-logo{
+                            .imagen-logo-imagen{
+                                width: 59%;
+                                margin-left: 68px;
+                                padding-left: 25px;
+                            }
+                        }
+                    }
+                }
+                .contenedor-inferior{
+                    justify-content: end;
+                    .navbar-inferior-contenedor-papa{
+                        font-size: 1rem;
+                        margin-top: 20px;
+                    }
+                }
+            }
         }
-    }
-    .navbar-contenedor-general{
-        .contenedor-inferior{
-            .navbar-toggler{
-                .navbar-inferior-contenedor-papa{
-                    .navbar-inferior-contenedor {
-                        flex-direction: column;
+        main{
+            .hero-seccion{
+                .hero-titulo{
+                    font-size: 2rem;
+                }
+                .hero-texto{
+                    font-size: 1.5rem;
+                }
+                .hero-link{
+                    font-size: 1.2rem;
+                }
+            }
+            .bienvenidos-seccion{
+                .bienvenidos-titulo{
+                    font-size: 1.8rem;
+                }
+                .bienvenidos-texto{
+                    font-size: 1.2rem
+                }
+            }
+            .productos-destacados{
+                h2{
+                    font-size: 1.6rem;
+                }
+                .producto-contenedor{
+                    grid-template-columns: 1fr 1fr;
+                    gap: 15px;
+                    .producto-card{
+                        h3{
+                            font-size: 0.7rem;
+                        }
+                        h2{
+                            font-size: 1rem;
+                        }
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .compras{
+                .cartel{
+                    margin-bottom: 0;
+                    margin-top: 25px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    h2{
                         text-align: center;
                     }
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        footer{
+            .footer-links{
+                padding-left: 0;
+                gap: 10px;
+                margin-bottom: 0;
+                margin-top: 18px !important;
+                li{
+                    font-size: 0.7rem;
                 }
             }
         }
